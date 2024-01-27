@@ -131,6 +131,10 @@ The `build_network` function constructs a new neural network architecture by add
 #### Learning Curve:
 ![1](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/vgg16.JPG)
 #### Performance metrics:
+
+### Samples from prediction:
+![1](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/vgg1.JPG)
+![2](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/vgg2.JPG)
 ## ResNet101 Model (Running fine-tune-resnet-101 with 89%.ipynb):
 ### Architecture Overview:
 ### Transfer Learning Approach:
@@ -146,9 +150,7 @@ The `build_network` function constructs a custom neural network architecture by 
     
 ### Learning Curve and Performance Metrics: 
 
-### Samples from prediction:
-![1](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/vgg1.JPG)
-![2](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/vgg2.JPG)
+
   
 # Results and Discussion:
 | Model         | Accuracy         | Precision     | Recall      |
