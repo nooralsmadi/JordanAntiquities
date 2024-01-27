@@ -64,7 +64,7 @@ In all Models, we do the same general preprocessing steps that are:
 
 ### Architecture Overview:
 
-Include a brief overview of the architecture of the Inception V3 model.
+
 
 ### Transfer Learning Approach:
 
@@ -87,11 +87,37 @@ In our transfer learning approach, we remove the head layer of the Inception V3 
 - Activation (Softmax): Softmax activation converts the raw output scores into probabilities, where each value represents the probability of the input belonging to a particular class.
 
 
-     * Learning Curve and Performance Metrics:  
-* <b>EfficientNet B0 Model<b> (Running fine-tune-efficient-net-b0 with 84%.ipynb):
-     * Architecture Overview:
-     * Transfer Learning Approach:
-     * Learning Curve and Performance Metrics: 
+### Learning Curve and Performance Metrics: 
+#### Learning Curve:
+![1](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/inception%20LC.JPG)
+### Performance Metrics: 
+
+## EfficientNet B0 Model (Running fine-tune-efficient-net-b0 with 84%.ipynb):
+### Architecture Overview:
+### Transfer Learning Approach:
+## Transfer Learning Approach
+
+For this custom neural network architecture, we employ transfer learning, leveraging a pre-trained base model's learned features. Here's the breakdown of the approach:
+
+1. Base Model: We start with a pre-trained base model, which has already learned features from a large dataset (such as ImageNet).
+
+2. Custom Fully Connected Layers: On top of the base model, we add custom fully connected layers to adapt the learned features for our specific classification task.
+
+- Flattening Layer: The Flatten() layer is used to flatten the output of the base model's last convolutional layer into a 1D tensor.
+    
+- Dense Layer 1: The Dense(units=1024) layer is a fully connected layer with 1024 units, allowing the model to learn high-level features.
+    
+- Activation (ReLU): The ReLU activation function introduces non-linearity to the network, aiding in learning complex patterns.
+    
+- Dropout: The Dropout(rate=0.5) layer randomly sets a fraction of input units to zero during training to prevent overfitting.
+    
+- Dense Layer 2 (Output Layer): The final Dense(units=classes) layer is the output layer with units equal to the number of classes in the classification task.
+    
+- Activation (Softmax): Softmax activation converts the raw output scores into probabilities, indicating the likelihood of each class.
+
+By using transfer learning, we can benefit from the pre-trained base model's feature extraction capabilities and fine-tune it to our specific classification task, thus potentially achieving better performance with less training data and computational resources.
+
+### Learning Curve and Performance Metrics: 
 * <b>VGG16 Model<b> (Running fine-tune-vgg16 with 86.7%.ipynb):
      * Architecture Overview:
      * Transfer Learning Approach:
