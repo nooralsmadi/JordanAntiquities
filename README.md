@@ -56,6 +56,13 @@ In all Models, we do the same general preprocessing steps that are:
 * One-hot encoding using LabelBinarizer.
 * Data Augmentation.
   ![1](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/Augmentation.JPG)
+
+
+# Modeling 
+* Inception V3 model:
+* EfficientNet B0:
+* VGG16:
+* ResNet101:
   
 
 
