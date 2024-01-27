@@ -20,16 +20,16 @@ using:
     
 you can find our dataset in the following link: <b>https://drive.google.com/file/d/1aOWaA5UcroibyKtIm0JskpIEPKh-6Fef/view?usp=sharing</b>
 
-<b> Our Dataset<b>
- | Name  |  Number of images |
+<b>Our Dataset<b>
+    | Name  |  Number of images |
     | ------------- | ------------- |
-    | Ajloun  |  681|
+    | Ajloun        |  681          |
     | ------------- | ------------- |
-    |  Jerash |  560 |
+    |  Jerash |  560                |
     | ------------- | ------------- |
     |  Petra |  519 |
     | ------------- | ------------- |
-    |  Roman Amphitheater |  535 |
+    |  Roman Amphitheater |  535    |
     | ------------- | ------------- |
     |  Umm Qais |  566 |
     | ------------- | ------------- |
