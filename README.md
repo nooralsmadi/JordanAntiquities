@@ -59,10 +59,10 @@ In all Models, we do the same general preprocessing steps that are:
 
 
 # Modeling 
-* Inception V3 model:
-* EfficientNet B0:
-* VGG16:
-* ResNet101:
+** Inception V3 Model:
+**EfficientNet B0 Model:
+**VGG16 Model:
+**ResNet101 Model:
   
 
 
