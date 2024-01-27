@@ -59,10 +59,22 @@ In all Models, we do the same general preprocessing steps that are:
 
 
 # Modeling 
-** Inception V3 Model:
-**EfficientNet B0 Model:
-**VGG16 Model:
-**ResNet101 Model:
+* <b>Inception V3 Model<b> (Running fine-tune-inception-v3 with 90.9%.ipynb):
+     * Architecture Overview:
+     * Transfer Learning Approach:
+     * Learning Curve and Performance Metrics:  
+* <b>EfficientNet B0 Model<b> (Running fine-tune-efficient-net-b0 with 84%.ipynb):
+     * Architecture Overview:
+     * Transfer Learning Approach:
+     * Learning Curve and Performance Metrics: 
+* <b>VGG16 Model<b> (Running fine-tune-vgg16 with 86.7%.ipynb):
+     * Architecture Overview:
+     * Transfer Learning Approach:
+     * Learning Curve and Performance Metrics: 
+* <b>ResNet101 Model<b> (Running fine-tune-resnet-101 with 89%.ipynb):
+     * Architecture Overview:
+     * Transfer Learning Approach:
+     * Learning Curve and Performance Metrics: 
   
 
 
