@@ -22,19 +22,19 @@ you can find our dataset in the following link: <b>https://drive.google.com/file
 
 <b>Our Dataset<b>
 
-    | Name  |  Number of images |
+    | Name          |  Number of images |
     | ------------- | ------------- |
     | Ajloun        |  681          |
     | ------------- | ------------- |
-    |  Jerash |  560                |
+    |  Jerash       |  560          |
     | ------------- | ------------- |
-    |  Petra |  519 |
+    |  Petra        |  519          |
     | ------------- | ------------- |
     |  Roman Amphitheater |  535    |
     | ------------- | ------------- |
-    |  Umm Qais |  566 |
+    |  Umm Qais     |  566          |
     | ------------- | ------------- |
-    |  Wadi Rum |  827 |
+    |  Wadi Rum     |  827          |
 
 The total number of images in our dataset 3688 images.
 
