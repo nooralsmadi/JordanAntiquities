@@ -142,6 +142,12 @@ The `build_network` function constructs a custom neural network architecture by 
     
 ### Learning Curve and Performance Metrics: 
   
-
+# Results and Discussion:
+| Model         | Accuracy         | Precision     | Recall      |
+|---------------|------------------|---------------|-------------|
+| Inception V3  |                  |               |             |
+| EfficientNet  |                  |               |             |
+| VGG16         |                  |               |             |
+| ResNet101     |                  |               |             |
 
 
