@@ -107,6 +107,10 @@ For this custom neural network architecture, we employ transfer learning, levera
 
 #### Performance Metrics:
 
+### Samples from predicted: 
+![1](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/predicted%20Efficient.JPG)
+![2](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/efficient2.JPG)
+
 ## VGG16 Model (Running fine-tune-vgg16 with 86.7%.ipynb):
 ### Architecture Overview:
 
