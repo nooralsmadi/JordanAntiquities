@@ -54,7 +54,9 @@ In all Models, we do the same general preprocessing steps that are:
 
 
 * One-hot encoding using LabelBinarizer.
-* Data Augmentaion.
+* Data Augmentation.
+  ![1](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/Augmentation.JPG)
+  
 
 
 
