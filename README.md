@@ -29,7 +29,14 @@ you can find our dataset in the following link: <b>https://drive.google.com/file
 | Wadi Rum           | 827             |
 
 The total number of images in our dataset is **3688 images**.
-<b>Examples:<b>
+
+* <b>Sample Images</b>
+
+    ![1](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/001.jpg)
+    ![2](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/003.jpg)
+    ![3](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/010.jpg)
+    ![4](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/018.jpg)
+    ![5](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/091.jpg)
 
 
 # Preprocessing steps:
