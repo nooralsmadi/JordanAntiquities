@@ -83,7 +83,12 @@ In our transfer learning approach, we remove the head layer of the Inception V3 
 ### Learning Curve and Performance Metrics: 
 #### Learning Curve:
 ![1](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/inception%20LC.JPG)
-### Performance Metrics: 
+#### Performance Metrics: 
+![1](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/CR-Inception.JPG)
+![2](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/CM-Inception.JPG)
+#### Samples from predictions:
+![1](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/predicted-Inception.JPG)
+![2](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/predict2-Inception.JPG)
 
 ## EfficientNet B0 Model (Running fine-tune-efficient-net-b0 with 81%.ipynb):
 ### Architecture Overview:
@@ -113,7 +118,7 @@ For this custom neural network architecture, we employ transfer learning, levera
 ![1](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/predicted%20Efficient.JPG)
 ![2](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/efficient2.JPG)
 
-## VGG16 Model (Running fine-tune-vgg16 with 86.7%.ipynb):
+## VGG16 Model (Running fine-tune-vgg16 with 88%.ipynb):
 ### Architecture Overview:
 
 ### Transfer Learning Approach:
@@ -133,7 +138,8 @@ The `build_network` function constructs a new neural network architecture by add
 #### Learning Curve:
 ![1](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/vgg16.JPG)
 #### Performance metrics:
-
+![1](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/CR-VGG16.JPG)
+![2](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/CM-VGG16.JPG)
 ### Samples from prediction:
 ![1](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/vgg1.JPG)
 ![2](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/vgg2.JPG)
