@@ -127,9 +127,19 @@ The `build_network` function constructs a new neural network architecture by add
 #### Learning Curve:
 ![1](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/vgg16.JPG)
 #### Performance metrics:
-## ResNet101 Model<b> (Running fine-tune-resnet-101 with 89%.ipynb):
+## ResNet101 Model (Running fine-tune-resnet-101 with 89%.ipynb):
 ### Architecture Overview:
 ### Transfer Learning Approach:
+The `build_network` function constructs a custom neural network architecture by adding fully connected layers on top of a pre-trained base model. Here's a breakdown of the transfer learning approach:
+
+  - Base Model: The function takes a pre-trained base model, which has already learned features from a large dataset or task.
+  - Global Average Pooling Layer: The GlobalAveragePooling2D() layer is applied to the output of the base model. This layer reduces the spatial dimensions of the features extracted by the base model to a vector of fixed size, effectively summarizing the learned features for each image.
+  -  Dense Layer 1: A Dense layer with 1024 units is added, allowing the model to learn high-level features from the pooled features.
+  - Activation (ReLU): The ReLU activation function introduces non-linearity to the network, enabling it to learn complex patterns in the data.
+  - Dropout: Dropout with a rate of 0.75 is applied to the output of the ReLU layer. This layer randomly sets a fraction of input units to zero during training, helping prevent overfitting by forcing the network to learn redundant representations.
+  - Dense Layer 2 (Output Layer): The final Dense layer with units equal to the number of classes in the classification task.
+  - Activation (Softmax): Softmax activation is applied to the output layer, converting the raw output scores into probabilities, where each value represents the probability of the input belonging to a particular class.
+    
 ### Learning Curve and Performance Metrics: 
   
 
