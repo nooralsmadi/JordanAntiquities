@@ -16,7 +16,6 @@ using:
 * Web scraping: we use web scraping in two ways: using giving URL to download images and using giving some keywords, to search about 
   them then download images. 
 * Videos: we converted some videos to frames and added some frames to our dataset.  
-* Manually: some images are downloaded manually.
     
 you can find our dataset in the following link: <b>https://drive.google.com/file/d/1aOWaA5UcroibyKtIm0JskpIEPKh-6Fef/view?usp=sharing</b>
 
@@ -30,7 +29,10 @@ you can find our dataset in the following link: <b>https://drive.google.com/file
 | Wadi Rum           | 827             |
 
 The total number of images in our dataset is **3688 images**.
+<b>Examples:<b>
 
+
+# Preprocessing steps:
 
 
 
