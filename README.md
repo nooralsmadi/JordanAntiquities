@@ -107,7 +107,7 @@ For this custom neural network architecture, we employ transfer learning, levera
 
 #### Performance Metrics:
 
-### Samples from predicted: 
+### Samples from prediction: 
 ![1](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/predicted%20Efficient.JPG)
 ![2](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/efficient2.JPG)
 
@@ -145,6 +145,10 @@ The `build_network` function constructs a custom neural network architecture by 
   - Activation (Softmax): Softmax activation is applied to the output layer, converting the raw output scores into probabilities, where each value represents the probability of the input belonging to a particular class.
     
 ### Learning Curve and Performance Metrics: 
+
+### Samples from prediction:
+![1](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/vgg1.JPG)
+![2](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/vgg2.JPG)
   
 # Results and Discussion:
 | Model         | Accuracy         | Precision     | Recall      |
