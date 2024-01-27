@@ -65,7 +65,8 @@ In all Models, we do the same general preprocessing steps that are:
        We remove the head layer, and then add our own layer on top. This allows you to leverage the features learned by the pre-trained 
        model and adapt them to a new task or dataset.
        <b>The layers that we added<b>:     
-       - Global Average Pooling Layer: The `GlobalAveragePooling2D()` layer reduces the spatial dimensions of the features extracted by the base model to a vector of fixed size, effectively summarizing the learned features for each image.
+         Global Average Pooling Layer: The `GlobalAveragePooling2D()` layer reduces the spatial dimensions of the features extracted by 
+          the base model to a vector of fixed size, effectively summarizing the learned features for each image.
 
          Dense Layer 1: The `Dense(units=256)` layer is a fully connected layer with 256 units. This layer helps in learning higher- 
              level features from the output of the global average pooling layer.
