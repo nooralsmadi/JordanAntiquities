@@ -149,7 +149,11 @@ The `build_network` function constructs a custom neural network architecture by 
   - Activation (Softmax): Softmax activation is applied to the output layer, converting the raw output scores into probabilities, where each value represents the probability of the input belonging to a particular class.
     
 ### Learning Curve and Performance Metrics: 
-
+#### Learning Curve:
+![1](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/LR-Resnet.JPG)
+#### Performance Metrics:
+![1](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/CR-RESNET.JPG)
+![2](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/CM-RESNET.JPG)
 
   
 # Results and Discussion:
