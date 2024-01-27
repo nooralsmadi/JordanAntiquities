@@ -37,9 +37,22 @@ The total number of images in our dataset is **3688 images**.
     ![3](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/010.jpg)
     ![4](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/018.jpg)
     ![5](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/091.jpg)
+    ![6](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/012.jpg)
 
 
 # Preprocessing steps:
+In all Models, we do the same general preprocessing steps that are:
+* Image pixel rescaling: divide pixels by 255 to convert the pixels range from 0-255 to 0-1.
+* Image resizing: this step may be changed from one model to another based on what is the compatible target size for the model.
+|Model               | Target size that we used |
+| ------------------ | --------------- |
+| Inception V3       | 229             |
+| EfficientNet       | 224             |
+| VGG16              | 224             |
+| RESNET101          | 224             |
+
+* One-hot encoding using LabelBinarizer.
+* Data Augmentaion.
 
 
 
