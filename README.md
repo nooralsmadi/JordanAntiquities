@@ -73,19 +73,12 @@ In our transfer learning approach, we remove the head layer of the Inception V3 
 #### The layers that we added:
 
 - Global Average Pooling Layer: The `GlobalAveragePooling2D()` layer reduces the spatial dimensions of the features extracted by the base model to a vector of fixed size, effectively summarizing the learned features for each image.
-
 - Dense Layer 1: The `Dense(units=256)` layer is a fully connected layer with 256 units. This layer helps in learning higher-level features from the output of the global average pooling layer.
-
 - Activation (ReLU): The ReLU activation function introduces non-linearity to the network, allowing it to learn complex patterns in the data.
-
 - Batch Normalization: Batch normalization helps stabilize and accelerate the training of deep neural networks by normalizing the input to each layer.
-
 - Dropout: The `Dropout(rate=0.5)` layer randomly sets a fraction of input units to zero during training, which helps prevent overfitting by forcing the network to learn redundant representations.
-
 - Dense Layer 2 (Output Layer): The final `Dense(units=classes)` layer is the output layer with units equal to the number of classes in the classification task.
-
 - Activation (Softmax): Softmax activation converts the raw output scores into probabilities, where each value represents the probability of the input belonging to a particular class.
-
 
 ### Learning Curve and Performance Metrics: 
 #### Learning Curve:
@@ -94,38 +87,50 @@ In our transfer learning approach, we remove the head layer of the Inception V3 
 
 ## EfficientNet B0 Model (Running fine-tune-efficient-net-b0 with 84%.ipynb):
 ### Architecture Overview:
-### Transfer Learning Approach:
-## Transfer Learning Approach
 
+### Transfer Learning Approach:
 For this custom neural network architecture, we employ transfer learning, leveraging a pre-trained base model's learned features. Here's the breakdown of the approach:
 
 1. Base Model: We start with a pre-trained base model, which has already learned features from a large dataset (such as ImageNet).
-
 2. Custom Fully Connected Layers: On top of the base model, we add custom fully connected layers to adapt the learned features for our specific classification task.
 
-- Flattening Layer: The Flatten() layer is used to flatten the output of the base model's last convolutional layer into a 1D tensor.
-    
+- Flattening Layer: The Flatten() layer is used to flatten the output of the base model's last convolutional layer into a 1D tensor.    
 - Dense Layer 1: The Dense(units=1024) layer is a fully connected layer with 1024 units, allowing the model to learn high-level features.
-    
-- Activation (ReLU): The ReLU activation function introduces non-linearity to the network, aiding in learning complex patterns.
-    
-- Dropout: The Dropout(rate=0.5) layer randomly sets a fraction of input units to zero during training to prevent overfitting.
-    
-- Dense Layer 2 (Output Layer): The final Dense(units=classes) layer is the output layer with units equal to the number of classes in the classification task.
-    
+- Activation (ReLU): The ReLU activation function introduces non-linearity to the network, aiding in learning complex patterns.    
+- Dropout: The Dropout(rate=0.5) layer randomly sets a fraction of input units to zero during training to prevent overfitting.    
+- Dense Layer 2 (Output Layer): The final Dense(units=classes) layer is the output layer with units equal to the number of classes in the classification task.   
 - Activation (Softmax): Softmax activation converts the raw output scores into probabilities, indicating the likelihood of each class.
+- 
+### Learning Curve and Performance Metrics: 
+#### Learning Curve:
+![1](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/efficient.JPG)
 
-By using transfer learning, we can benefit from the pre-trained base model's feature extraction capabilities and fine-tune it to our specific classification task, thus potentially achieving better performance with less training data and computational resources.
+#### Performance Metrics:
+
+## VGG16 Model (Running fine-tune-vgg16 with 86.7%.ipynb):
+### Architecture Overview:
+
+### Transfer Learning Approach:
+The `build_network` function constructs a new neural network architecture by adding custom layers on top of a pre-trained model. Here's a breakdown of the transfer learning approach:
+
+1. Base Model: The function takes a pre-trained model as input, leveraging its learned features from a large dataset or task.
+2. Custom Fully Connected Layers:
+   - Flattening Layer: The Flatten() layer is applied to the output of the pre-trained model's last layer to convert it into a 1D tensor.
+   - Dense Layer 1: A Dense layer with 256 units is added, enabling the model to learn higher-level features.
+   - Activation (ReLU): The ReLU activation function introduces non-linearity to the network, aiding in learning complex patterns.
+   - Batch Normalization: Batch normalization is applied to stabilize and accelerate the training process by normalizing the input to each layer.
+   - Dropout: Dropout with a rate of 0.5 is used to randomly deactivate a fraction of neurons during training, preventing overfitting.
+   - Dense Layer 2 (Output Layer): The final Dense layer with units equal to the number of classes in the classification task.
+   - Activation (Softmax): Softmax activation converts the model's raw output into probabilities, representing the likelihood of each class.
 
 ### Learning Curve and Performance Metrics: 
-* <b>VGG16 Model<b> (Running fine-tune-vgg16 with 86.7%.ipynb):
-     * Architecture Overview:
-     * Transfer Learning Approach:
-     * Learning Curve and Performance Metrics: 
-* <b>ResNet101 Model<b> (Running fine-tune-resnet-101 with 89%.ipynb):
-     * Architecture Overview:
-     * Transfer Learning Approach:
-     * Learning Curve and Performance Metrics: 
+#### Learning Curve:
+![1](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/vgg16.JPG)
+#### Performance metrics:
+## ResNet101 Model<b> (Running fine-tune-resnet-101 with 89%.ipynb):
+### Architecture Overview:
+### Transfer Learning Approach:
+### Learning Curve and Performance Metrics: 
   
 
 
