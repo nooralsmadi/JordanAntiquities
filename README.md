@@ -85,7 +85,7 @@ In our transfer learning approach, we remove the head layer of the Inception V3 
 ![1](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/inception%20LC.JPG)
 ### Performance Metrics: 
 
-## EfficientNet B0 Model (Running fine-tune-efficient-net-b0 with 84%.ipynb):
+## EfficientNet B0 Model (Running fine-tune-efficient-net-b0 with 81%.ipynb):
 ### Architecture Overview:
 
 ### Transfer Learning Approach:
@@ -106,6 +106,8 @@ For this custom neural network architecture, we employ transfer learning, levera
 ![1](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/efficient.JPG)
 
 #### Performance Metrics:
+![1](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/CR-Effitientnet.JPG)
+![2](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/CM-Effitientnet.JPG)
 
 ### Samples from prediction: 
 ![1](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/predicted%20Efficient.JPG)
