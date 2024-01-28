@@ -124,7 +124,27 @@ In our transfer learning approach, we remove the head layer of the Inception V3 
 ![2](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/predict2-Inception.JPG)
 
 ## EfficientNet B0 Model (Running fine-tune-efficient-net-b0 with 81%.ipynb):
+EfficientNet B0 is a convolutional neural network (CNN) architecture proposed by Google Research that achieves state-of-the-art performance on image classification tasks while maintaining high computational efficiency. It is part of the EfficientNet family of models, which are designed to balance model size, accuracy, and computational cost through a novel compound scaling method.
+
+### Key Features:
+
+- Compound Scaling: EfficientNet B0 introduces compound scaling, a method that uniformly scales the network depth, width, and resolution to achieve better performance. By jointly scaling these dimensions, the model achieves higher accuracy without significantly increasing computational cost.
+- Depthwise Separable Convolutions: The backbone of EfficientNet B0 is composed of depthwise separable convolutions, which factorize standard convolutions into depthwise convolutions and pointwise convolutions. This reduces the number of parameters and computations required, making the model more efficient.
+- Inverted Residual Blocks: Inspired by MobileNetV2, EfficientNet B0 incorporates inverted residual blocks, which consist of a lightweight bottleneck layer followed by a linear projection layer. This design enables efficient feature extraction while maintaining representational power.
+- Squeeze-and-Excitation (SE) Blocks: To enhance feature discrimination, EfficientNet B0 integrates SE blocks, which dynamically recalibrate channel-wise feature responses based on their importance. This mechanism helps the model focus on informative features and suppress irrelevant ones.
+- Swish Activation Function: EfficientNet B0 employs the Swish activation function, a smooth and non-monotonic activation function that has been shown to improve training convergence and model performance compared to traditional activation functions like ReLU.
+
 ### Architecture Overview:
+
+EfficientNet B0 follows a hierarchical structure with multiple stages of feature extraction. The overall architecture can be summarized as follows:
+
+- Input Layer: Accepts input images of predefined dimensions.
+- Stem Convolutional Layers: Initial convolutional layers that extract low-level features from the input images.
+- EfficientNet Blocks: The backbone of the network consists of multiple EfficientNet blocks, each comprising a sequence of inverted residual blocks with varying depths and widths. These blocks progressively extract higher-level features from the input.
+- Global Average Pooling: A global average pooling layer aggregates spatial information across feature maps to generate a compact representation of the input.
+- Fully Connected Layer: The global average pooling output is fed into a fully connected layer followed by a softmax activation function for predicting class probabilities.
+
+![1](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/The-EffecientNet-B0%20architecture.png)
 
 ### Transfer Learning Approach:
 For this custom neural network architecture, we employ transfer learning, leveraging a pre-trained base model's learned features. Here's the breakdown of the approach:
