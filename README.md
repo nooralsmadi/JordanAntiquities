@@ -61,13 +61,13 @@ In all Models, we do the same general preprocessing steps that are:
 
     #### Parameters:
 
-       * Rotation_range: Random rotation range for images, specified in degrees.
-       * Horizontal_flip: Boolean indicating random horizontal flipping of images.
-       * Width_shift_range: Random width shifting range (horizontal direction) for images.
-       * Height_shift_range: Random height shifting range (vertical direction) for images.
-       * Shear_range: Random shear transformation range for images.
-       * Zoom_range: Random zooming range for images.
-       * Fill_mode: Method for filling newly created pixels introduced by transformations; 'nearest' fills with the nearest neighbor value.
+    * Rotation_range: Random rotation range for images, specified in degrees.
+    * Horizontal_flip: Boolean indicating random horizontal flipping of images.
+    * Width_shift_range: Random width shifting range (horizontal direction) for images.
+    * Height_shift_range: Random height shifting range (vertical direction) for images.
+    * Shear_range: Random shear transformation range for images.
+    * Zoom_range: Random zooming range for images.
+    * Fill_mode: Method for filling newly created pixels introduced by transformations; 'nearest' fills with the nearest neighbor value.
   
 After defining the augmentation parameters with ImageDataGenerator, the flow() method generates augmented batches of training data from the input images (X_train) and corresponding labels (y_train). The BATCH_SIZE parameter determines the size of each augmented data batch during training. 
 
