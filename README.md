@@ -78,9 +78,26 @@ After defining the augmentation parameters with ImageDataGenerator, the flow() m
 
 ## Inception V3 Model (Running fine-tune-inception-v3 with 90.9%.ipynb)
 
+Inception v3 is a convolutional neural network (CNN) architecture designed for image classification tasks. It is part of the Inception family of models developed by Google Research. Inception v3 builds upon the success of its predecessors, Inception v1 and Inception v2, by introducing several improvements in terms of accuracy and computational efficiency.
+
+### Key Features:
+
+- Inception Modules: The hallmark of the Inception architecture is its use of inception modules, which are composed of multiple parallel convolutional pathways of different kernel sizes. These pathways allow the model to capture features at various scales and resolutions simultaneously, facilitating better representation learning.
+- Factorization: Inception v3 employs factorization techniques such as factorized convolutions and dimensionality reduction to reduce the computational cost of the model while preserving its expressive power. This helps in making the model more efficient and suitable for deployment on resource-constrained devices.
+- Auxiliary Classifiers: Inception v3 includes auxiliary classifiers at intermediate layers of the network, which serve two purposes: providing additional regularization during training and facilitating the gradient flow through the network. These auxiliary classifiers help in mitigating the vanishing gradient problem and improving the overall training stability.
+- Batch Normalization: Batch normalization is extensively used throughout the network to accelerate training convergence and reduce the sensitivity to initialization. It normalizes the activations of each layer to have zero mean and unit variance, which helps in improving the gradient flow and reducing the internal covariate shift.
+- Global Average Pooling: Instead of fully connected layers at the top of the network, Inception v3 replaces them with global average pooling layers. This reduces the number of parameters in the model and makes it more robust to spatial translations and distortions in the input images.
+
 ### Architecture Overview:
+Inception v3 consists of multiple convolutional layers followed by inception modules and auxiliary classifiers. The overall architecture can be summarized as follows:
 
+- Input Layer: Accepts input images of predefined dimensions.
+- Convolutional Layers: A series of convolutional layers with varying filter sizes and depths to extract hierarchical features from the input images.
+- Inception Modules: These modules are the building blocks of the network and contain parallel convolutional pathways of different kernel sizes. They enable the network to capture features at multiple scales and resolutions.
+- Auxiliary Classifiers: Auxiliary classifiers are inserted at intermediate layers of the network to aid in training and regularization.
+- Final Layers: Global average pooling layers followed by fully connected layers and softmax activation for predicting the class probabilities.
 
+![1](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/inception%20architecture.png)
 
 ### Transfer Learning Approach:
 
