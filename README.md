@@ -271,7 +271,21 @@ The `build_network` function constructs a custom neural network architecture by 
 | VGG16         |     88             |       88        |        88     |
 | ResNet101     |     90             |        90       |     90        |
 
-
+## Accuracy:
+* Inception V3 achieves the highest accuracy of 91%, indicating that it correctly classifies 91% of the instances in the dataset.
+* ResNet101 closely follows with an accuracy of 90%, demonstrating its effectiveness in the task.
+* VGG16 performs slightly lower with an accuracy of 88%, still showing strong performance but trailing behind Inception V3 and ResNet101.
+* EfficientNet achieves the lowest accuracy among the models at 83%, indicating that it may not generalize as well to the dataset compared to the other architectures.
+  
+## Precision:
+* Inception V3, VGG16, and ResNet101 all achieve precision scores of 91%, indicating that when they predict a certain class, they are correct 91% of the time.
+* EfficientNet has a slightly lower precision of 81%, suggesting that it may have a higher rate of false positives compared to the other models.
+  
+## Recall:
+* Inception V3, VGG16, and ResNet101 achieve recall scores of 91%, indicating that they are able to correctly identify 91% of the instances belonging to a certain class.
+* EfficientNet also has a recall of 81%, suggesting that it may miss identifying some instances of certain classes more often compared to the other architectures.
+  
+Overall, Inception V3 and ResNet101 demonstrate the highest overall performance across all metrics, with Inception V3 having a slight edge in accuracy. VGG16 also performs well, closely following the top models in accuracy, precision, and recall. EfficientNet, while still achieving respectable scores, shows a slightly lower performance compared to the other architectures in this particular evaluation.
 
 
 # Great Job
