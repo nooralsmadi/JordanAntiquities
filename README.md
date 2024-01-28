@@ -264,12 +264,12 @@ The `build_network` function constructs a custom neural network architecture by 
 ![2](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/resnet%20predicted.JPG)
   
 # Results and Discussion:
-| Model         | Accuracy         | Precision     | Recall      |
-|---------------|------------------|---------------|-------------|
-| Inception V3  |                  |               |             |
-| EfficientNet  |                  |               |             |
-| VGG16         |                  |               |             |
-| ResNet101     |                  |               |             |
+| Model         | Accuracy (%)       | Precision (%)   | Recall  (%)   |
+|---------------|--------------------|-----------------|---------------|
+| Inception V3  |   91               |    91           |    91         |
+| EfficientNet  |   83               |      81         |     81        |
+| VGG16         |     88             |       88        |        88     |
+| ResNet101     |     90             |        90       |     90        |
 
 
 
