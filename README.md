@@ -55,6 +55,21 @@ In all Models, we do the same general preprocessing steps that are:
 
 * One-hot encoding using LabelBinarizer.
 * Data Augmentation.
+  We split the data into training and testing sets with an 80:20 ratio, then we apply data augmentation exclusively to the training data.
+
+  Data augmentation is a technique used to enhance the size and diversity of a training dataset by applying various transformations to existing images. This process is pivotal for improving the generalization and robustness of trained models, as it exposes them to a wider range of input variations.
+
+#### Parameters:
+
+* rotation_range: Random rotation range for images, specified in degrees.
+* horizontal_flip: Boolean indicating random horizontal flipping of images.
+* width_shift_range: Random width shifting range (horizontal direction) for images.
+* height_shift_range: Random height shifting range (vertical direction) for images.
+* shear_range: Random shear transformation range for images.
+* zoom_range: Random zooming range for images.
+* fill_mode: Method for filling newly created pixels introduced by transformations; 'nearest' fills with the nearest neighbor value.
+  
+After defining the augmentation parameters with ImageDataGenerator, the flow() method generates augmented batches of training data from the input images (X_train) and corresponding labels (y_train). The BATCH_SIZE parameter determines the size of each augmented data batch during training.  
   ![1](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/Augmentation.JPG)
 
 
