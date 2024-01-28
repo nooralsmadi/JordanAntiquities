@@ -216,8 +216,30 @@ The `build_network` function constructs a new neural network architecture by add
 ### Samples from prediction:
 ![1](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/vgg1.JPG)
 ![2](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/vgg2.JPG)
+
 ## ResNet101 Model (Running fine-tune-resnet-101 with 90.1%.ipynb):
+
+ResNet-101 is a deep convolutional neural network (CNN) architecture proposed by Kaiming He et al. in the paper "Deep Residual Learning for Image Recognition." It is part of the ResNet (Residual Network) family of models known for their ability to train very deep neural networks effectively. ResNet-101 specifically refers to a ResNet architecture with 101 layers, and it has demonstrated state-of-the-art performance on various computer vision tasks, including image classification and object detection.
+
+### Key Features:
+
+Residual Connections: The key innovation of ResNet-101 is the introduction of residual connections, also known as skip connections or shortcut connections. These connections allow the network to learn residual functions by directly adding the input to the output of convolutional layers. This facilitates the training of very deep networks by alleviating the vanishing gradient problem and enabling the flow of gradients through the network.
+
+- Bottleneck Blocks: ResNet-101 employs bottleneck blocks, which consist of a sequence of convolutional layers with 1x1, 3x3, and 1x1 filters. This design reduces the computational cost while increasing the representational power of the network, allowing for deeper architectures with improved performance.
+- Global Average Pooling: Instead of using fully connected layers at the end of the network, ResNet-101 replaces them with global average pooling layers. This pooling operation aggregates spatial information across feature maps and produces a fixed-size representation for each feature map, reducing overfitting and the number of parameters in the model.
+- Pre-Activation Residual Units: ResNet-101 adopts pre-activation residual units, where batch normalization and ReLU activation are applied before convolution operations. This architecture modification has been shown to improve training convergence and generalization performance.
+  
 ### Architecture Overview:
+
+ResNet-101 architecture consists of the following components:
+
+- Input Layer: Accepts input images of fixed size (e.g., 224x224 pixels).
+- Convolutional Layers: The network begins with a series of convolutional layers followed by batch normalization and ReLU activation functions.
+- Residual Blocks: The core building blocks of ResNet-101 are residual blocks, each containing multiple residual units. Each residual unit consists of multiple convolutional layers with skip connections.
+- Pooling Layers: Max pooling layers are interspersed between residual blocks to downsample feature maps and reduce spatial dimensions.
+- Global Average Pooling: The final feature maps are passed through global average pooling layers to produce a compact representation of the input.
+- Output Layer: The output of the global average pooling layer is fed into a fully connected layer followed by softmax activation for predicting class probabilities.
+  
 ### Transfer Learning Approach:
 The `build_network` function constructs a custom neural network architecture by adding fully connected layers on top of a pre-trained base model. Here's a breakdown of the transfer learning approach:
 
