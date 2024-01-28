@@ -239,6 +239,8 @@ ResNet-101 architecture consists of the following components:
 - Pooling Layers: Max pooling layers are interspersed between residual blocks to downsample feature maps and reduce spatial dimensions.
 - Global Average Pooling: The final feature maps are passed through global average pooling layers to produce a compact representation of the input.
 - Output Layer: The output of the global average pooling layer is fed into a fully connected layer followed by softmax activation for predicting class probabilities.
+
+![1](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/resnet101%20architecture.png)
   
 ### Transfer Learning Approach:
 The `build_network` function constructs a custom neural network architecture by adding fully connected layers on top of a pre-trained base model. Here's a breakdown of the transfer learning approach:
