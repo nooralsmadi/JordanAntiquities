@@ -172,7 +172,27 @@ For this custom neural network architecture, we employ transfer learning, levera
 ![2](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/efficient2.JPG)
 
 ## VGG16 Model (Running fine-tune-vgg16 with 88%.ipynb):
+
+VGG16 is a convolutional neural network (CNN) architecture proposed by the Visual Geometry Group (VGG) at the University of Oxford. It was introduced in the paper "Very Deep Convolutional Networks for Large-Scale Image Recognition" by Simonyan and Zisserman. VGG16 is known for its simplicity and effectiveness, and it serves as a popular benchmark model for various computer vision tasks, particularly image classification.
+
+### Key Features: 
+
+- Uniform Architecture: VGG16 follows a uniform architecture, consisting of a series of convolutional layers followed by max-pooling layers. This simplicity enables easy implementation and interpretation of the model.
+- Stacked Convolutional Layers: The core building blocks of VGG16 are stacks of convolutional layers with small 3x3 filters, which are followed by rectified linear unit (ReLU) activation functions. This design facilitates feature extraction across multiple layers of abstraction.
+- Max Pooling Layers: Max-pooling layers are interspersed between the convolutional layers to downsample feature maps and reduce spatial dimensions, while retaining important features.
+- Fully Connected Layers: Towards the end of the network, VGG16 includes fully connected layers followed by softmax activation for classifying input images into various categories. These layers aggregate features learned by the convolutional layers and produce final predictions.
+- Pre-Trained Models: Pre-trained versions of VGG16, trained on large-scale image datasets such as ImageNet, are widely available. These pre-trained models can be fine-tuned on specific tasks or used as feature extractors for transfer learning.
+
 ### Architecture Overview:
+
+VGG16 architecture consists of the following components:
+
+- Input Layer: Accepts input images of fixed size (usually 224x224 pixels).
+- Convolutional Blocks: The network comprises several convolutional blocks, each containing multiple convolutional layers followed by max-pooling layers. These blocks progressively extract hierarchical features from the input images.
+- Flattening Layer: The output feature maps from the convolutional blocks are flattened into a vector representation to be fed into fully connected layers.
+- Fully Connected Layers: The flattened features are passed through fully connected layers, which perform classification based on learned features. The final layer typically uses softmax activation to output class probabilities.
+
+![1](https://github.com/nooralsmadi/JordanAntiquities/blob/main/Data/VGG16%20arch.png)
 
 ### Transfer Learning Approach:
 The `build_network` function constructs a new neural network architecture by adding custom layers on top of a pre-trained model. Here's a breakdown of the transfer learning approach:
